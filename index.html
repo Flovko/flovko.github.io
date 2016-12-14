@@ -6,9 +6,12 @@
 
 <meta name=‘viewport’ content=‘initial-scale=1,maximum-scale=1,user-scalable=no’ />
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"/> <link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>   
 <style>
-    
-/* CSS style rules go here! */   
+    body {
+        background: #f5f5f5;
+        font-family: Imprima, san-serif;
+    }
 
 </style>
 </head>
@@ -17,16 +20,37 @@
 <header>
     <h1>MAP672: Programming for Web Mapping</h1>
     <h2> Web Cartography at the University of Kentucky</h2>
+        
         <section>
-	       <img src= “images/ocean-depth.png” alt=“map of ocean depths” >
-	       <h3></h3>
-	       <p></p>
-	       <p></p>
+	       <img src="images/ocean-depth.png" alt="map of ocean depths" />
+	       <h3>insert map title</h3>
+	       <p>description of map and what it's saying</p>
+	       <p>how the map was constructed</p>
 	       <ul>
-		      <li> <a href= “”/></li>
-		      <li><a href=“”/></li>
+		      <li> See the map: <a href="#">Depth of the ocean</a></li>
+		      <li><a href="https://asterweb.jpl.nasa.gov/gdem.asp">GDEM, NASA's ASTER data from the Jet Propulsion Laboratory</a></li>
 	       </ul>
         </section> 
+        
+        <section>
+            <a target = '_blank' href="https://rgdonohue.cartodb.com/viz/7a678fd6-88a7-11e5-8ee8-0e674067d321/public_map"><img src="images/uninsured-americans.png" alt="uninsured americans by county" /></a>
+            <h3><a target = '_blank' href="https://rgdonohue.cartodb.com/viz/7a678fd6-88a7-11e5-8ee8-0e674067d321/public_map">Uninsured Ameircans in 2015 by US County</a></h3>
+            <p>The map was build using QGIS for X processing and used CartoDB CartoCSS styles to do Y and Z ...</p>
+            <ul>
+                <li>See the map: <a target = '_blank'  href="https://rgdonohue.cartodb.com/viz/7a678fd6-88a7-11e5-8ee8-0e674067d321/public_map">Uninsured Ameircans in 2015 by US County</a></li>
+                <li>Data Source: <a target = '_blank'  href="http://www.countyhealthrankings.org/">County Health Rankings &amp; Roadmaps</a></li>
+            </ul>
+        </section>
+        
+        <section>
+            <a target = '_blank' href="#"><img src="images/hello-kitty.png" alt="Hello Kitty Proportional Symbol Map" /></a>
+            <h3><a target = '_blank' href="#">Hello Kitty Proportional Symbol Map</a></h3>
+            <p>This map was built with custom JavaScript code drawing upon the Leaflet JavaScript Library, bla bla bla</p>
+            <ul>
+                <li>See the map: <a target = '_blank'  href="#">Hello Kitty Proportional Symbol Map</a></li>
+                <li>Data Source: <a target = '_blank'  href="https://www.eia.gov/electricity/data/detail-data.html">County Health Rankings &amp; Roadmaps</a></li>
+            </ul>
+        </section>
 
     
 </header>   
