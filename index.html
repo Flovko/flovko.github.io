@@ -17,7 +17,7 @@
         width: 100%;
         min-width: 800px;
         margin: 0 auto;
-        background: steelblue;
+        background: #49c6b4;
         padding: 15px 0 20px;
     }
     h1 {
@@ -46,7 +46,6 @@
         list-style-type: none;
         font-size: .9em;
         color: #375671;
-        line-height: 1.6em;
     }
     a, a:visited {   
         color: #003d71;
@@ -69,6 +68,8 @@
         float: left;
         margin-right: 20px;
         border: 2px solid #dddddd;
+        padding: 15px 15px 15px;
+        background-image:linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%)
     }
 </style>
 
@@ -80,7 +81,7 @@
 <section class="project">
     <img src="images/Pacific_Crest_Trail.jpg" alt="Pacific Crest Trail Projected on Landforms of the United States by Erwing Raisz" class="project-image"/>
     <h3><a href="maps/PCT_Georeference.pdf">Pacific Coast Trail</a></h3>
-    <p>The map was Generated using QGIS and the use of Erwin Raisz Landforms of the United States Map.  The map was georeferenced to insure that the Erwin Map could access geospacial data from the map referenced on QGIS.  Once the map is digitized I can create new points, lines, and polygons.  This kind of power allows to use classic maps as base map for our web projects. In the case of the map displayed to left of this paragraph the map has been digitized to display the Pacific Crest Trail from Washington State to California. </p>
+    <p>The map was Generated using QGIS and the uses Erwin Raisz Landforms of the United States Map as a basemap.  The map is georeferenced to insure that the Erwin basemap plots geospacial data correctly from attribute tables being referenced by QGIS.  Once the map is digitized new points, lines, and polygons can be added to the basemap.  This kind of power allows the author to use classic maps as basemap for web based projects.  The map displayed to left has been digitized to display the Pacific Crest Trail from Washington State to California. </p>
     <ul>
         <li>See the map: <a href="maps/PCT_Georeference.pdf">PCT Trail Map</a></li>
         <li>Data Source: <a href="http://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5332131.zip"> PCT Shapefile Provided by The Forest Service</a>, <a href="http://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~267284~90041658:Landforms-of-the-United-States-?sort=Pub_List_No_InitialSort%2CPub_Date%2CPub_List_No%2CSeries_No&qvq=q:erwin%2Blandforms%2B1957;sort:Pub_List_No_InitialSort%2CPub_Date%2CPub_List_No%2CSeries_No;lc:RUMSEY~8~1&mi=1&trs=4"> David Rumsey Map Collection</a> </li>
@@ -90,7 +91,7 @@
 <section class="project">
    <a target = '_blank' href="https://flovko.carto.com/viz/ebcce1d6-7dab-11e6-9ea5-0e3ebc282e83/public_map"><img src="images/Syrian_Refugee_Distribution_by_Country.jpg" alt="uninsured americans by county" class="project-image" /></a>
     <h3><a target = '_blank' href="https://flovko.carto.com/viz/ebcce1d6-7dab-11e6-9ea5-0e3ebc282e83/public_map">Syrian Refugee Distribution by Country</a></h3>
-    <p>The map was built using CartoDB.  It depicts the mass exodus of the Syrians to neighboring countries with registered refugees.  The map has color coded the countries to show the percentage of the total refugees (September 2016) within each particular country.  The purple circles are scaled proportionally display the population of prominent Syrian Cities. When the user zooms in closer to the map, orange circle will display registered refugee sites.  The map does not take into account unregistered refugees within in the region or those that have made their way to Eastern or Western Europe.  The map helps to depict the magnitude of the humanitarian crisis and the sheer volume of the Syrian population that has been displaced.</p>
+    <p>The map was built using CartoDB.  It depicts the mass exodus of the Syrian refugees to neighboring countries.  The countires have been color coded to show the percentage of the total registred refugees(September 2016) within each particular country.  The purple circles are scaled proportionally to display the population of prominent Syrian Cities. When the viewer zooms into the map the purple circles will disappear and orange circle will appear. The orange cirlces display registered refugee sites in the region.  The map does not take into account unregistered refugees within in the region or those who have made their way to Eastern or Western Europe.  The map helps to depict the magnitude of the humanitarian crisis and the volume of the Syrian population that have been displaced by the ongoing conflict.</p>
     <ul>
         <li>See the map: <a target = '_blank'  href="https://flovko.carto.com/viz/ebcce1d6-7dab-11e6-9ea5-0e3ebc282e83/public_map">Syrian Refugee Distribution by Country</a></li>
         <li>Data Source: <a target = '_blank'  href="https://data.humdata.org/search?q=syria&amp;ext_search_source=main-nav/">The Human Data Exchange</a></li>
@@ -99,16 +100,13 @@
     
 <section class="project">
    <a target = '_blank' href="https://flovko.github.io/portfolio_file_server/"><img src="images/Power_Plants.jpg" alt="Nuclear, Solar and Hydro Power Production Plants" class="project-image" /></a>
-    <h3><a target = '_blank' href="https://flovko.github.io/portfolio_file_server/"> Proportional Symbol Map Displaying Nuclear,<br> Solar and Hydro Power Plants</a></h3>
-    <p>This map was built with custom JavaScript code drawing upon the Leaflet JavaScript Library to create a bivariate map. The map displays the location Nuclear(neon-green), Solar(orange) and Hydro(blue) power production plants.  The The point data is displayed in proportional symbols based on the power output of each power plant.  The viewer can filter the map in several ways.  First, the reader can click on the map and it will only display power facilities located within 500 KM of the clicked area.  Second, the reader can filter the map by its layers and by unchecking power sources in the layers control box.  Additionally, by clicking on individual points a popup window will display the name of the plant, its fuel source and the distance the plant is located in relation to the user's click.  This map allows you to see the saturation of the listed fuel sources and their production capacity. bla</p>
-    <ul>
+    <h3><a target = '_blank' href="https://flovko.github.io/portfolio_file_server/"> Bivariante Map</a></h3>
+    <p>This map was built with custom JavaScript code drawing upon the Leaflet JavaScript Library to create a bivariate map.  The map displays the location Nuclear(neon-green), Solar(orange) and Hydro(blue) power production plants.  The The point data is displayed as proportional symbols based on the power output of each power plant.  The viewer can filter the map in several ways. First, the reader can click on the map and it will only display power facilities located within 500 KM of the clicked area.  Second, the viewer can filter the map by unchecking power sources in the layers control box.  Additionally, by clicking on an individual point a popup window will display the name of the plant, its fuel source and the distance the plant is located in relation to the user's click on the map.   </p>
+       <ul>
         <li>See the map: <a target = '_blank'  href="https://flovko.github.io/portfolio_file_server/">Nuclear, Solar and Hydro Power Production Plants</a></li>
-        <li>Data Source: <a target = '_blank'  href="https://www.eia.gov/electricity/data/detail-data.html">County Health Rankings &amp; Roadmaps</a></li>
+        <li>Data Source: <a target = '_blank'  href="https://www.eia.gov/electricity/data/detail-data.html">Power Plant Data</a></li>
     </ul>
-</section>    
-
-
-
-    
+</section>     
+   
 </body>
 </html>
